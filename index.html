@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>HTML Contact Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Content Rewriter</h1>
+        <form name="frmContact" id="" action="" enctype="multipart/form-data">
+
+            <div class="row">
+                <div class="inline-block right-margin">
+                    <div class="label">
+                        Company or Product Name <span id="field1-label" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="field1" id="field1" />
+                </div>
+
+                <div class="inline-block responsive">
+                    <div class="label">
+                        Category of Product <span id="field2-label" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="field2" id="field2" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="label">
+                        Give me however much you want to, freeform, anything you want
+                        to tell me about this<span id="field3-label" class="info"></span>
+                    </div>
+                    <textarea class="text-field" rows="15" name="field3" id="field3"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="label">
+                        Email Quick Topic Description<span class="info"></span>
+                    </div>
+                    <br>
+                    <div>
+                        <div>
+                            <div class="label">
+                                Email 1<span id="field4-label" class="info"></span>
+                            </div>
+                            <input class="text-field" rows="15" name="field4" id="field4">
+                        </div>
+                        <br>
+                        <div>
+                            <div class="label">
+                                Email 2<span id="field5-label" class="info"></span>
+                            </div>
+                            <input class="text-field" rows="15" name="field5" id="field5">
+                        </div>
+                        <br>
+                        <div>
+                            <div class="label">
+                                Email 3<span id="field6-label" class="info"></span>
+                            </div>
+                            <input class="text-field" rows="15" name="field6" id="field6">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="inline-block right-margin">
+                    <div class="label">
+                        Goal for this email <span id="field7-label" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="field7" id="field7" />
+                </div>
+
+                <div class="inline-block responsive">
+                    <div class="label">
+                        Call to action / Promotion <span id="field8-label" class="info"></span>
+                    </div>
+                    <input type="text" class="input-field" name="field8" id="field8" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="label">
+                        Product seed content <span id="field9-label" class="info"></span>
+                    </div>
+                    <textarea class="text-field" rows="15" name="field9" id="field9"></textarea>
+                    <!-- <input type="text" class="input-field" name="field3" id="field3" /> -->
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="label">
+                        Additional instructions you would like me to know before sending<span id="field10-label"
+                            class="info"></span>
+                    </div>
+                    <textarea class="text-field" rows="2" name="field10" id="field10">
+
+                </textarea>
+                </div>
+            </div>
+
+
+
+        </form>
+        <div class="row" style="    display: flex;
+            justify-content: flex-end;margin-right: 44px;margin-top: 32px;">
+            <button id="button" type="button" onClick="validateContactForm()" name="send" class="btn-submit"
+                value="Send">Create Content -></button>
+        </div>
+
+        <br><br>
+        <div class="label">
+            ChatGPT generated content
+        </div>
+        <div class="row">
+
+            <textarea class="text-field" rows="10" id="output">
+
+            </textarea>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
