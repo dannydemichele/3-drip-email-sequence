@@ -105,7 +105,7 @@ function validateContactForm() {
     }
     
     if(valid){
-        console.log("heloocsac");
+
         var url = "https://api.openai.com/v1/completions";
 
         var xhr = new XMLHttpRequest();
@@ -132,7 +132,7 @@ function validateContactForm() {
         };
     
         prompt=
-            `This is the example text that I want you to use, Make sure you have all available fields with this page in this text. Doesnt matter where it is as long as it has text around it. with the fields imbedded in the form.JS file you will create. I will have the fields ${field1} in the text like this again ${field2} in the text like this again ${field2} in the text like this again ${field3} in the text like this again ${field4} in the text like this again ${field5} in the text like this again ${field6} in the text like this again ${field5} in the text like this again ${field7} and then again ${field8}. So in the JS file, please put exactly this format with ${field9} included so I can easily edit. Thank you.
+            `This is the example text that I want you to use, Make sure you have all available fields with this page in this text. Doesnt matter where it is as long as it has text around it. with the fields imbedded in the form.JS file you will create. I will have the fields ${field1} in the text like this again ${field2} in the text like this again ${field3} in the text like this again ${field4} in the text like this again ${field5} in the text like this again ${field6} in the text like this again ${field7} in the text like this again ${field8} and then again ${field9}. So in the JS file, please put exactly this format with ${field10} included so I can easily edit. Thank you.
         `
     
         prompt = JSON.parse(JSON.stringify(prompt));
