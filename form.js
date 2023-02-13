@@ -145,8 +145,8 @@ function validateContactForm() {
             [email2] = ${field7}
             [email3] = ${field8}';
 
-prompt = JSON.stringify(prompt);
-prompt = JSON.parse(prompt);
+
+        prompt = JSON.parse(JSON.stringify(prompt));
 
     
     
