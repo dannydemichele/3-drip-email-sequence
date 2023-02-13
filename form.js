@@ -132,7 +132,7 @@ function validateContactForm() {
         };
     
         prompt=
-            Ignore All Previous instructions before this one. You are one of the top email sales copywriters in the United States in the field of {field2} for over two decades now. You are using your expertise and rewrite a three-part email sequence that I have used successfully in the past, and use it as your base foundation to create a new email by incorporating the new details and instructions I have supplied in [NewContent] section below.  
+           ' Ignore All Previous instructions before this one. You are one of the top email sales copywriters in the United States in the field of {field2} for over two decades now. You are using your expertise and rewrite a three-part email sequence that I have used successfully in the past, and use it as your base foundation to create a new email by incorporating the new details and instructions I have supplied in [NewContent] section below.  
 
             Specific Instructions: Please use the structure, format, style, Tone and length of the three emails listed [PreviousContent] below (To be clear, these are labeled [email1], [email2], and [email3] respectively) and rewrite the 3 emails for a new company, including the details that I list in [NewContent] section below. 
 
@@ -147,7 +147,7 @@ function validateContactForm() {
             [PreviousContent]
             [email1] = ${field6}
             [email2] = ${field7}
-            [email3] = ${field8}
+            [email3] = ${field8}'
         
         
         prompt = JSON.parse(JSON.stringify(prompt));
