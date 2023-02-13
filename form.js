@@ -131,15 +131,15 @@ function validateContactForm() {
             }
         };
     
-        prompt = ' Ignore All Previous instructions before this one. You are one of the top email sales copywriters in the United States in the field of {field2} for over two decades now. You are using your expertise and rewrite a three-part email sequence that I have used successfully in the past, and use it as your base foundation to create a new email by incorporating the new details and instructions I have supplied in [NewContent] section below.  
+        prompt = ' Ignore All Previous instructions before this one. You are one of the top email sales copywriters in the United States in the field of ${field2} for over two decades now. You are using your expertise and rewrite a three-part email sequence that I have used successfully in the past, and use it as your base foundation to create a new email by incorporating the new details and instructions I have supplied in [NewContent] section below.  
             Specific Instructions: Please use the structure, format, style, Tone and length of the three emails listed [PreviousContent] below (To be clear, these are labeled [email1], [email2], and [email3] respectively) and rewrite the 3 emails for a new company, including the details that I list in [NewContent] section below. 
             [NewContent]= 
             Information on our audience: ${field3} (Do not mention the audience by name, just know this is it incase it helps your writing)
             I am offering the following promo: Promotion information: ${field4}
             My Main outcome desired is: ${field5}
-            The Company name we are rewriting this for is: {field1}
-            {field8} - Data Points to include in email (separate by comma)
-            Here are some additional important notes to consider when rewriting: {field10}.
+            The Company name we are rewriting this for is: ${field1}
+            ${field8} - Data Points to include in email (separate by comma)
+            Here are some additional important notes to consider when rewriting: ${field10}.
             [PreviousContent]
             [email1] = ${field6}
             [email2] = ${field7}
