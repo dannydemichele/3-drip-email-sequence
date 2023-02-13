@@ -132,9 +132,31 @@ function validateContactForm() {
         };
     
         prompt=
-            `This is the example text that I want you to use, Make sure you have all available fields with this page in this text. Doesnt matter where it is as long as it has text around it. with the fields imbedded in the form.JS file you will create. I will have the fields ${field1} in the text like this again ${field2} in the text like this again ${field3} in the text like this again ${field4} in the text like this again ${field5} in the text like this again ${field6} in the text like this again ${field7} in the text like this again ${field8} and then again ${field9}. So in the JS file, please put exactly this format with ${field10} included so I can easily edit. Thank you.
-        `
-    
+            Ignore All Previous instructions before this one. You are one of the top email sales copywriters in the United States in the field of {field1} for over two decades now. You are using your expertise and rewrite a three-part email sequence that I have used successfully in the past, and use it as your base foundation to create a new email by incorporating the new details and instructions I have supplied in [NewContent] section below.  
+
+            Specific Instructions: Please use the structure, format, style, Tone and length of the three emails listed [PreviousContent] below (To be clear, these are labeled [email1], [email2], and [email3] respectively) and rewrite the 3 emails for a new company, including the details that I list in [NewContent] section below. 
+
+            [NewContent]= 
+            Information on our audience: ${field3} (Do not mention the audience by name, just know this is it incase it helps your writing)
+            I am offering the following promo: Promotion information: ${field4}
+            My Main outcome desired is: ${field5}
+
+
+            [PreviousContent]
+            [email1] = ${field6}
+            [email2] = ${field7}
+            [email3] = ${field8}
+
+            {field1} - Industry
+            {field2} - Data Points to include in email (separate by comma)
+            {field3} - Audience
+            {field4} - Promotion
+            {field5} - Main Outcome Desired
+            {field6} - email1
+            {field7} - email2
+            {field8} - email3    
+        
+        
         prompt = JSON.parse(JSON.stringify(prompt));
     
     
